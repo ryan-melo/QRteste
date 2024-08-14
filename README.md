@@ -2,9 +2,9 @@
 <h3 align="center"> Cria Qr Code a partir de texto e url </h3>
 
 <p align="center">
-  <a href=".techs">Tecnologias</a>
+  <a href="#techs">Tecnologias</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href=".techs">Features</a>
+  <a href="#techs">Features</a>
 </p>
 
 <br>
@@ -16,7 +16,7 @@
 
 <br/>
 
-<div class="techs">
+<div id="techs">
   
 ## 🚀 Tecnologias
 
