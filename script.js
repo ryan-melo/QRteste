@@ -16,7 +16,7 @@ function gerar() {
     im.style.display = "block"
     downloadButton.style.display = "block"
     qr.src = "https://i.gifer.com/ZKZg.gif"
-    teste = setTimeout(() => {qr.src = gerarLink()}, 300)
+    setTimeout(() => {qr.src = gerarLink()}, 300)
     
     input.placeholder = "Digite seu texto ou url"
     input.style.border = "1px solid rgb(165, 165, 165)"
@@ -41,7 +41,7 @@ downloadButton.addEventListener("click", async () => {
     console.log(blob)
     const objectURL = URL.createObjectURL(blob);
     a.href = objectURL
-    a.download = `${input.value}.pdf`;
+    a.download = `qrcode-${input.value}.pdf`;
     a.click()  
   } else {
     pedirParaInserirTexto()
