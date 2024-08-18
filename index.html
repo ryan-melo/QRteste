@@ -10,21 +10,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="script.js" async></script>
 
   <link rel="shortcut icon" href="assets/qr-code.png" type="image/x-icon">
 </head>
 <body>
   
+
   <div id="container">
     <h1>Gerador de QR Code</h1>
     <p>Cole uma url ou digite um texto para criar o QR code</p>
     <input type="text" placeholder="Digite seu texto ou url">
     <button>Gerar QR Code</button>
-    <div class="im">
+    <div id="im">
       <img src="" alt="">
     </div>
+    <div class="downloadButton">
+      <p>Baixar QR Code</p>
+    </div>
   </div>
+  <a href="" class="ancoraDeDownload">Baixar</a>
+
 
 </body>
 </html>

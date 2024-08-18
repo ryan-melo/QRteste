@@ -14,16 +14,20 @@ body {
   background-color: rgb(106, 73, 196);
 }
 
+#containerFora {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  gap: 10px;
+}
+
 #container {
   border-radius: 15px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-width: 80%;
-  
   background-color: #f0f8ff;
-  
 }
 
 input {
@@ -36,6 +40,7 @@ button {
   border: none;
   background-color: rgb(106, 73, 196);
   color: white;
+  cursor: pointer;
 }
 
 input, button {
@@ -55,14 +60,35 @@ p {
   font-size: 16px;
 }
 
-.im {
-  border: 1px solid rgb(165, 165, 165);
+#im {
+  border: 1px solid rgb(106, 73, 196);
   padding: 20px;
   display: none;
   text-align: center;
 }
 
-img {
+#im img {
   width: 60%;
-  height: 60%;
+}
+
+.ancoraDeDownload {
+  display: none;
+}
+
+.downloadButton {
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  background-color: rgb(106, 73, 196);
+}
+
+.downloadButton p {
+  color: white;
+  margin-top: 8px;
+}
+
+.downloadButton:hover {
+  background-color: rgb(106, 73, 196);
 }
