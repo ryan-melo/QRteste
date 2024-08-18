@@ -4,10 +4,12 @@ const qr = document.querySelector("img");
 const im = document.querySelector("#im");
 const downloadButton = document.querySelector(".downloadButton");
 const a = document.querySelector("a")
+const rangeInput = document.querySelector("#range")
+const teste = document.querySelector(".teste")
+const result = document.querySelectorAll(".result")
 
 button.addEventListener("click", gerar);
 
-let link;
 let validacion = false
 
 function gerar() {
@@ -16,7 +18,7 @@ function gerar() {
     im.style.display = "block"
     downloadButton.style.display = "block"
     qr.src = "https://i.gifer.com/ZKZg.gif"
-    setTimeout(() => {qr.src = gerarLink()}, 300)
+    setTimeout(() => {qr.src = gerarLink(200)}, 300)
     
     input.placeholder = "Digite seu texto ou url"
     input.style.border = "1px solid rgb(165, 165, 165)"
@@ -25,8 +27,8 @@ function gerar() {
   }
 }
 
-function gerarLink() {
-  return link = "https://quickchart.io/qr?text=" + input.value + "&margin=0" + "&light=f0f8ff"
+function gerarLink(size) {
+  return `https://quickchart.io/qr?text=${input.value}&margin=0&light=f0f8ff&size=${size}`
 }
 
 function pedirParaInserirTexto() {
@@ -37,7 +39,7 @@ function pedirParaInserirTexto() {
 
 downloadButton.addEventListener("click", async () => {
   if (validacion) {
-    const blob = await fetch(link).then(res => res.blob());
+    const blob = await fetch(gerarLink(500)).then(res => res.blob());
     console.log(blob)
     const objectURL = URL.createObjectURL(blob);
     a.href = objectURL
@@ -47,6 +49,4 @@ downloadButton.addEventListener("click", async () => {
     pedirParaInserirTexto()
   }
 } )
-
-
 

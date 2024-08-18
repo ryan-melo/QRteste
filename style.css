@@ -14,14 +14,8 @@ body {
   background-color: rgb(106, 73, 196);
 }
 
-#containerFora {
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-  gap: 10px;
-}
-
 #container {
+  max-width: 80%;
   border-radius: 15px;
   padding: 25px;
   display: flex;
@@ -67,8 +61,8 @@ p {
   text-align: center;
 }
 
-#im img {
-  width: 60%;
+img {
+  max-width: 100%;
 }
 
 .ancoraDeDownload {
