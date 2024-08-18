@@ -33,6 +33,7 @@ Esse projeto tem as seguintes features:
 
 - Gerar um QR Code personalizado com base no input do usuário
 - Consumo da API que gera a imagem
+- Botão de download da imagem gerada pela API
 - Responsividade
 </div>
 
