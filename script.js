@@ -41,7 +41,7 @@ downloadButton.addEventListener("click", async () => {
     console.log(blob)
     const objectURL = URL.createObjectURL(blob);
     a.href = objectURL
-    a.download = `qrcode-${input.value}.pdf`;
+    a.download = `qrcode-${input.value}.jpeg`;
     a.click()  
   } else {
     pedirParaInserirTexto()
